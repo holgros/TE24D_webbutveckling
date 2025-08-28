@@ -1,0 +1,16 @@
+/* Så här skriver man kommentarer i CSS */
+p {
+    background-color: orange;
+}
+
+h1 {
+    color: rgb(255, 0, 255)
+}
+
+h2 {
+    background-color: #ff00ff; /* Samma färg som rgb(255, 0, 255) */
+}
+
+body {
+    background-color: rgba(128, 0, 0, 0.5);
+}

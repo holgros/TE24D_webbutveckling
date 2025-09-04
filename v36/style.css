@@ -1,0 +1,41 @@
+.röd {
+    color: red;
+}
+
+#ViktigParagraf {
+    font-weight: bold;
+}
+
+.blå {
+    color: blue;
+}
+
+p {
+    color: gray;
+}
+
+.rosa {
+    color: pink;
+}
+
+#grön {
+    color: green;
+}
+
+p a {   /* Matchar hyperlänkar inuti paragrafer */
+    color: red;
+}
+
+h1, h2 {    /* matchar både h1 och h2 */
+    text-align: center;
+}
+
+.sofia {
+    font-family: "Sofia", sans-serif;
+}
+
+body {
+    background-image: url("web-569-ava-2024omslag.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+}

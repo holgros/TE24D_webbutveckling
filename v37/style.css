@@ -1,0 +1,36 @@
+p.pink {
+    background-color: pink;
+    width: 50%; /* 50% av sidan */
+}
+
+p.orange {
+    background-color: orange;
+    width: 25%;
+}
+
+span.green {
+    color: green;
+}
+
+span.purple {
+    color: purple;
+}
+
+#avabild {
+    width: 10%;
+}
+
+.none {
+    display: none;
+}
+
+.inline {
+    display: inline;
+}
+
+.lorem {
+    background-color: lightblue;
+    width: 50%;
+    height: 100px;
+    overflow: auto; /* auto innebär att en scrollbar uppstår när innehållet "svämmar över" (overflow) */
+}

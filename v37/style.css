@@ -34,3 +34,30 @@ span.purple {
     height: 100px;
     overflow: auto; /* auto innebär att en scrollbar uppstår när innehållet "svämmar över" (overflow) */
 }
+
+.inlineblock {
+    border-style: solid;
+    display: inline-block;
+    height: 50px;
+    width: 100px;
+    margin-top: 25px;
+    margin-left: 5px;
+    padding: 20px;
+}
+
+.right {
+    margin-left: 50px;
+}
+
+.rounded {
+    background-color: pink;
+    height: 200px;
+    width: 200px;
+    border-style: dashed;
+    border-radius: 50%;
+}
+
+.holgerbild {
+    height: 250px;
+    border-radius: 50%;
+}

@@ -1,0 +1,53 @@
+div {
+  padding: 10px;
+}
+
+/*
+    Med position får man möjlighet att positionera element på olika sätt.
+    Positioneringen sker genom att sätta värden på:
+    top     (från överkant av fönstret/parent/ordinarie plats i sidans flöde)
+    bottom  (från nederkant av fönstret/parent/ordinarie plats i sidans flöde)
+    left    (från vänster kant av fönstret/parent/ordinarie plats i sidans flöde)
+    right   (från höger kant av fönstret/parent/ordinarie plats i sidans flöde)
+    z-index (styr vad som ligger uppepå något annat. Högt index ligger ovanpå lågt index.)
+  */
+
+.fixed {
+  background-color: greenyellow;
+  width: 200px;
+  height: 200px;
+  position: fixed;
+  bottom: 50px;
+  right: 150px;
+  z-index: 2; /* z-index talar om vad som ligger överst. Högt index ligger ovanpå lågt index.*/
+}
+
+/* 
+    position: absolute 
+    Styr ett elements position i förhållande till dess parent.
+    Dess parent måste vara positionerad 
+    */
+.absolute {
+  background-color: gray;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  z-index: 1;
+}
+
+.relative {
+  background-color: black;
+  color: white;
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+
+.sticky {
+  background-color: cyan;
+  position: sticky;
+  top: 0px; /* med top satt fastnar den mot toppen på webbläsaren*/
+  bottom: 0px; /* med bottom satt fastnar den mot botten på webbläsaren*/
+}

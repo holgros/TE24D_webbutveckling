@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>srcset demo</title>
+    <link rel="stylesheet" href="srcset-style.css" />
+  </head>
+  <body>
+    <h1><code>srcset</code>-demo</h1>
+    <p>
+      När webbläsaren laddar in den här sidan kommer den ladda olika bilder
+      beroende på hur stort (brett) webbläsarfönstret är.
+    </p>
+    <img
+      src="images/sunrise-original-6720.jpg"
+      alt="A sunset"
+      srcset="
+        images/sunrise-original-414.jpg   414w,
+        images/sunrise-original-1280.jpg 1280w,
+        images/sunrise-original-1920.jpg 1920w
+      " />
+  </body>
+</html>

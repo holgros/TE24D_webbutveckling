@@ -27,4 +27,11 @@ for (let i = 0; i < buttons.length; i++) {
   });
 }
 
-// TODO: skriv ut muskoordinater i div:en med id "position"
+// identifiera en div i DOM:en och skriv ut till denna
+// lyssna till mushändelsen mousemove
+window.addEventListener("mousemove", (event) => {
+  //console.log(`Musen är nu på koordinaterna (${event.clientX},${event.clientY})`);
+  let position = document.getElementById("position");
+  // Skriv ut.
+  position.innerHTML = `Musen är nu på koordinaterna (${event.clientX},${event.clientY})`;
+});

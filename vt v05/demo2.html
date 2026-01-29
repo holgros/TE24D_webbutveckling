@@ -1,0 +1,47 @@
+<!--DEMO 2: INPUT-FÄLT SOM VISAR TEXT I REALTID-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo 2: Input-händelse</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .demo-box { margin: 20px 0; padding: 15px; border: 2px solid #2196F3; }
+        input { 
+            padding: 10px; 
+            width: 300px; 
+            border: 2px solid #2196F3; 
+            font-size: 16px; 
+        }
+        #liveOutput { 
+            color: #2196F3; 
+            font-weight: bold; 
+            min-height: 25px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-box">
+        <h2>Demo 2: Input-händelse</h2>
+        <p>Skriv något i fältet nedan:</p>
+        <input type="text" id="userInput" placeholder="Skriv här...">
+        <p>Du skriver: <span id="liveOutput">_______</span></p>
+    </div>
+
+    <script>
+        const inputField = document.getElementById('userInput');
+        const outputSpan = document.getElementById('liveOutput');
+        
+        // Lyssnar på varje tangenttryckning
+        inputField.addEventListener('input', function() {
+            outputSpan.textContent = this.value;
+            
+            // Extra effekt: Ändra färg baserat på längd
+            if (this.value.length > 20) {
+                outputSpan.style.color = "#FF9800";
+            } else {
+                outputSpan.style.color = "#2196F3";
+            }
+        });
+    </script>
+</body>
+</html>

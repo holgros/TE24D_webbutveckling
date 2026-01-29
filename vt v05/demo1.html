@@ -1,0 +1,37 @@
+<!--DEMO 1: KNAPP SOM ÄNDRAR TEXT VID KLICK-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo 1: Klick-händelse</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .demo-box { margin: 20px 0; padding: 15px; border: 2px solid #4CAF50; }
+        #changeText { 
+            padding: 10px 20px; 
+            background-color: #4CAF50; 
+            color: white; 
+            border: none; 
+            cursor: pointer; 
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-box">
+        <h2>Demo 1: Klick-händelse</h2>
+        <p id="text">Klicka på knappen för att ändra den här texten!</p>
+        <button id="changeText">Ändra texten</button>
+    </div>
+
+    <script>
+        // Hitta elementen
+        const button = document.getElementById('changeText');
+        const textElement = document.getElementById('text');
+        
+        // Lägg till event listener
+        button.addEventListener('click', function() {
+            textElement.textContent = "Bra jobbat! Texten har ändrats med JavaScript!";
+            textElement.style.color = "#4CAF50";
+        });
+    </script>
+</body>
+</html>

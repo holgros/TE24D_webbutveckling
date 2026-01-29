@@ -1,0 +1,65 @@
+<!--DEMO 3: DIV SOM BYTER FÄRG NÄR MUSEN HOVRAR ÖVER DEN-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo 3: Mouse-händelser</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .demo-box { margin: 20px 0; padding: 15px; border: 2px solid #9C27B0; }
+        #colorChanger { 
+            width: 200px; 
+            height: 200px; 
+            background-color: #E1BEE7; 
+            border: 3px solid #9C27B0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .stats { margin-top: 10px; color: #666; }
+    </style>
+</head>
+<body>
+    <div class="demo-box">
+        <h2>Demo 3: Mouse-händelser</h2>
+        <p>För musen över lådan:</p>
+        <div id="colorChanger">Håll musen här</div>
+        <div class="stats">
+            <p>Antal hovringar: <span id="hoverCount">0</span></p>
+            <p>Antal klick: <span id="clickCount">0</span></p>
+        </div>
+    </div>
+
+    <script>
+        const box = document.getElementById('colorChanger');
+        const hoverCounter = document.getElementById('hoverCount');
+        const clickCounter = document.getElementById('clickCount');
+        
+        let hoverTimes = 0;
+        let clickTimes = 0;
+        
+        // Mouseover - när musen kommer över
+        box.addEventListener('mouseover', function() {
+            this.style.backgroundColor = "#CE93D8";
+            this.style.transform = "scale(1.05)";
+            hoverTimes++;
+            hoverCounter.textContent = hoverTimes;
+        });
+        
+        // Mouseout - när musen lämnar
+        box.addEventListener('mouseout', function() {
+            this.style.backgroundColor = "#E1BEE7";
+            this.style.transform = "scale(1)";
+        });
+        
+        // Click - när man klickar
+        box.addEventListener('click', function() {
+            this.style.backgroundColor = "#AB47BC";
+            this.textContent = "Klickad!";
+            clickTimes++;
+            clickCounter.textContent = clickTimes;
+        });
+    </script>
+</body>
+</html>

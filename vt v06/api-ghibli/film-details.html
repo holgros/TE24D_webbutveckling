@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Detaljer - Studio Ghibli</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-film"></i> Studio Ghibli Film Detaljer</h1>
+            <p class="subtitle">Detaljerad information om filmen</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="back-container">
+            <a href="index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Tillbaka till filmdatabasen
+            </a>
+        </div>
+
+        <div class="loading" id="loadingIndicator">
+            <i class="fas fa-spinner fa-spin"></i> Hämtar filminformation...
+        </div>
+
+        <div class="error" id="errorMessage">
+            <i class="fas fa-exclamation-triangle"></i> <span id="errorText">Ett fel uppstod vid hämtning av data.</span>
+        </div>
+
+        <div id="filmDetailsContainer">
+            <!-- Filmens detaljer läggs in här dynamiskt -->
+        </div>
+
+        <footer>
+            <p>Data hämtad från <a href="https://ghibliapi.vercel.app" target="_blank">Studio Ghibli API</a></p>
+            <p>Skapad för webbutvecklingsklass • Använder dynamiska API-anrop</p>
+        </footer>
+    </div>
+
+    <!-- Läser in JavaScript-filen för detaljsidan -->
+    <script src="details.js"></script>
+</body>
+</html>

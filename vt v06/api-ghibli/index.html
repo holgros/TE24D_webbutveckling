@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Ghibli Filmer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-film"></i> Studio Ghibli Filmdatabas</h1>
+            <p class="subtitle">Utforska den magiska världen av Studio Ghibli genom detta API-drivna gränssnitt. Klicka på "Läs mer" för att upptäcka detaljer om varje film.</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="controls">
+            <button id="loadBtn">
+                <i class="fas fa-download"></i> Hämta Alla Filmer
+            </button>
+            <button id="resetBtn">
+                <i class="fas fa-redo"></i> Rensa Allt
+            </button>
+        </div>
+
+        <div class="loading" id="loadingIndicator">
+            <i class="fas fa-spinner fa-spin"></i> Hämtar Ghibli-filmer...
+        </div>
+
+        <div class="error" id="errorMessage">
+            <i class="fas fa-exclamation-triangle"></i> <span id="errorText">Ett fel uppstod vid hämtning av data.</span>
+        </div>
+
+        <div class="films-grid" id="filmsContainer">
+            <!-- Filmerna läggs in här dynamiskt -->
+        </div>
+
+        <footer>
+            <p>Data hämtade från <a href="https://ghibliapi.vercel.app" target="_blank">Studio Ghibli API</a> • Använder officiell Ghibli-filmdata</p>
+            <p>Skapad för webbutvecklingsklass</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
